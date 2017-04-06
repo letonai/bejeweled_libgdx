@@ -46,7 +46,7 @@ public class GameObject extends Sprite{
 		return ySpeed;
 	}
 
-	public void setX(float x)
+	/*public void setX(float x)
 	{
 		this.x = x;
 	}
@@ -64,10 +64,11 @@ public class GameObject extends Sprite{
 	public float getY()
 	{
 		return y;
-	}
+	}*/
 	
 	public void draw(SpriteBatch sb){
-		sb.draw(this.getTexture(),x,y);
+		super.draw(sb);
+		//sb.draw(this.getTexture(),x,y);
 	}
 
 	
