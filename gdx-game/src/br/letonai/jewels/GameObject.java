@@ -6,14 +6,14 @@ import com.badlogic.gdx.graphics.g2d.*;
 import com.badlogic.gdx.math.*;
 import android.view.*;
 
-public class GameObject {
+public abstract class GameObject {
 	
 	private int width,height;
 	private float xSpeed,ySpeed;
 	private Sprite sp;
 	private Texture texture;
 	
-	public abstract GameObject(int width, int height){
+	public  GameObject(int width, int height){
 		this.width=width;
 		this.height=height;
 	}
