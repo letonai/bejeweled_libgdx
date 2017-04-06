@@ -8,14 +8,16 @@ import android.view.*;
 
 public abstract class GameObject {
 	
-	protected int width,height;
+	protected int x,y;
 	protected float xSpeed,ySpeed;
-	protected Sprite sp;
+	protected Sprite sprite;
 	protected Texture texture;
 	
-	public  GameObject(int width, int height){
-		this.width=width;
-		this.height=height;
+
+	public  GameObject(Sprite sp, int x, int y){
+		this.x=width;
+		this.y=height;
+		this.sprite=sp
 	}
 
 	public void setXSpeed(float xSpeed)

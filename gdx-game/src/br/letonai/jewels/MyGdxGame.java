@@ -12,7 +12,7 @@ public class MyGdxGame implements ApplicationListener
 	Texture texture;
 	Texture ball;
 	SpriteBatch batch;
-	Player player;
+	GameObject player;
 	//teste celular
 
 	@Override
