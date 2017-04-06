@@ -46,7 +46,8 @@ public class MyGdxGame implements ApplicationListener
 		batch.begin();
 		//batch.draw(texture, Gdx.graphics.getWidth() / 4, 0, 
 		//		   Gdx.graphics.getWidth() / 2, Gdx.graphics.getWidth() / 2);
-		batch.draw(texture, /*Gdx.graphics.getWidth()-*/touchPos.x,Gdx.graphics.getHeight()-touchPos.y);
+		//batch.draw(texture, /*Gdx.graphics.getWidth()-*/touchPos.x,Gdx.graphics.getHeight()-touchPos.y);
+		player.draw(batch);
 		batch.end();
 	}
 

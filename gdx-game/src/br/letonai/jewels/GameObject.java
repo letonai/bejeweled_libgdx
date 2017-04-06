@@ -10,6 +10,8 @@ public class GameObject {
 	
 	private int width,height;
 	private float xSpeed,ySpeed;
+	private Sprite sp
+	private Texture texture;
 	
 	public GameObject(int width, int height){
 		this.width=width;
@@ -54,6 +56,10 @@ public class GameObject {
 	public int getHeight()
 	{
 		return height;
+	}
+	
+	public void draw(SpriteBatch sb){
+		sp.draw(sb);
 	}
 
 	
