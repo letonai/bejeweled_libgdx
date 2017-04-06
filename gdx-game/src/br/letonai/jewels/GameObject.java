@@ -16,9 +16,7 @@ public class GameObject {
 	public GameObject(){
 	}
 	
-	public GameObject(Texture sp, int x, int y){
-		this.x=x;
-		this.y=y;
+	public GameObject(Texture sp){
 		this.texture=sp;
 	}
 
@@ -63,7 +61,7 @@ public class GameObject {
 	}
 	
 	public void draw(SpriteBatch sb){
-		sb.draw(texture,x,y);
+		sb.draw(this.texture,x,y);
 	}
 
 	
