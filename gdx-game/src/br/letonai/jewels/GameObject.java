@@ -13,11 +13,12 @@ public class GameObject {
 	private Sprite sprite;
 	private Texture texture;
 	
-
-	public  GameObject(Texture sp, int x, int y){
+	public GameObject(){
+	}
+	
+	public GameObject(Texture sp, int x, int y){
 		this.x=x;
 		this.y=y;
-		//this.sprite=sp
 		this.texture=sp;
 	}
 

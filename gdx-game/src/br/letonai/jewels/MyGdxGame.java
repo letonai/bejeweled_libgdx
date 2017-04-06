@@ -22,7 +22,7 @@ public class MyGdxGame implements ApplicationListener
 		texture = new Texture(Gdx.files.internal("android.jpg"));
 		batch = new SpriteBatch();
 		ball = new Texture(Gdx.files.internal("android.jpg"));
-		player = new GameObject(ball,0,0);
+		//player = new GameObject(ball,0,0);
 		//teste
 		
 	}
@@ -48,7 +48,7 @@ public class MyGdxGame implements ApplicationListener
 		//batch.draw(texture, Gdx.graphics.getWidth() / 4, 0, 
 		//		   Gdx.graphics.getWidth() / 2, Gdx.graphics.getWidth() / 2);
 		//batch.draw(texture, /*Gdx.graphics.getWidth()-*/touchPos.x,Gdx.graphics.getHeight()-touchPos.y);
-		player.draw(batch);
+		//player.draw(batch);
 		batch.end();
 	}
 
