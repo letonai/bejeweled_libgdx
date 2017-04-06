@@ -20,6 +20,7 @@ public class MyGdxGame implements ApplicationListener
 		batch = new SpriteBatch();
 		ball = new Texture(Gdx.files.internal("android.jpg"));
 		player = new Player(ball,0,0);
+		//teste
 		
 	}
 
