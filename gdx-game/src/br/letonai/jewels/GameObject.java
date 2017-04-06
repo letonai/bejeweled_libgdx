@@ -13,7 +13,7 @@ public class GameObject {
 	private Sprite sp;
 	private Texture texture;
 	
-	public GameObject(int width, int height){
+	public abstract GameObject(int width, int height){
 		this.width=width;
 		this.height=height;
 	}
