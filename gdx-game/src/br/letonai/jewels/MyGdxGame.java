@@ -13,6 +13,7 @@ public class MyGdxGame implements ApplicationListener
 	Texture ball;
 	SpriteBatch batch;
 	Player player;
+	//teste celular
 
 	@Override
 	public void create()
