@@ -62,7 +62,7 @@ public class GameObject {
 	}
 	
 	public void draw(SpriteBatch sb){
-		sp.draw(sb);
+		sb.draw(sb,x,y,0);
 	}
 
 	
