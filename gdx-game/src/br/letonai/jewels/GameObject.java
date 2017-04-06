@@ -8,10 +8,10 @@ import android.view.*;
 
 public abstract class GameObject {
 	
-	private int width,height;
-	private float xSpeed,ySpeed;
-	private Sprite sp;
-	private Texture texture;
+	protected int width,height;
+	protected float xSpeed,ySpeed;
+	protected Sprite sp;
+	protected Texture texture;
 	
 	public  GameObject(int width, int height){
 		this.width=width;
