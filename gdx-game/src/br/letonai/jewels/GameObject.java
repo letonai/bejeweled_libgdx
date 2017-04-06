@@ -19,6 +19,10 @@ public class GameObject {
 	public GameObject(Texture sp){
 		this.texture=sp;
 	}
+	
+	public setTexture(Texture txt){
+		this.texture=txt;
+	}
 
 	public void setXSpeed(float xSpeed)
 	{
