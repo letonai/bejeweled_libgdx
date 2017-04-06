@@ -14,10 +14,11 @@ public abstract class GameObject {
 	protected Texture texture;
 	
 
-	public  GameObject(Sprite sp, int x, int y){
+	public  GameObject(Texture sp, int x, int y){
 		this.x=width;
 		this.y=height;
-		this.sprite=sp
+		//this.sprite=sp
+		this.texture=sp;
 	}
 
 	public void setXSpeed(float xSpeed)
