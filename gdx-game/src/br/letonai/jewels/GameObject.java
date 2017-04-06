@@ -10,7 +10,7 @@ public class GameObject {
 	
 	private int width,height;
 	private float xSpeed,ySpeed;
-	private Sprite sp
+	private Sprite sp;
 	private Texture texture;
 	
 	public GameObject(int width, int height){

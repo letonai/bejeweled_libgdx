@@ -10,7 +10,7 @@ import com.badlogic.gdx.utils.TimeUtils;
 
 public class Player extends GameObject implements InputProcessor{
 	
-	private Sprite sp
+	private Sprite sp;
 	private Texture texture;
 	
 	public Player(Texture txt,int x, int y){
