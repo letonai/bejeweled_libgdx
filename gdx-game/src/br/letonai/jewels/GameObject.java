@@ -8,10 +8,10 @@ import com.badlogic.gdx.math.*;
 
 public class GameObject {
 	
-	protected int x,y;
-	protected float xSpeed,ySpeed;
-	protected Sprite sprite;
-	protected Texture texture;
+	private int x,y;
+	private float xSpeed,ySpeed;
+	private Sprite sprite;
+	private Texture texture;
 	
 
 	public  GameObject(Texture sp, int x, int y){
