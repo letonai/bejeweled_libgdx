@@ -6,22 +6,24 @@ import com.badlogic.gdx.graphics.g2d.*;
 import com.badlogic.gdx.math.*;
 
 
-public class GameObject {
+public class GameObject extends Sprite{
 	
-	private int x,y;
+	private float x,y;
 	private float xSpeed,ySpeed;
-	private Sprite sprite;
-	private Texture texture;
+	
+	//private Texture texture;
 	
 	public GameObject(){
 	}
 	
 	public GameObject(Texture sp){
-		this.texture=sp;
+		super(sp);
+		//this.texture=sp;
 	}
 	
 	public void setTexture(Texture txt){
-		this.texture=txt;
+		super.setTexture(txt);
+		//this.texture=txt;
 	}
 
 	public void setXSpeed(float xSpeed)
@@ -44,28 +46,28 @@ public class GameObject {
 		return ySpeed;
 	}
 
-	public void setX(int x)
+	public void setX(float x)
 	{
 		this.x = x;
 	}
 
-	public int getX()
+	public float getX()
 	{
 		return x;
 	}
 
-	public void setY(int y)
+	public void setY(float y)
 	{
 		this.y = y;
 	}
 
-	public int getY()
+	public float getY()
 	{
 		return y;
 	}
 	
 	public void draw(SpriteBatch sb){
-		sb.draw(this.texture,x,y);
+		sb.draw(this.getTexture(),x,y);
 	}
 
 	

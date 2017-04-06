@@ -24,6 +24,8 @@ public class MyGdxGame implements ApplicationListener
 		ball = new Texture(Gdx.files.internal("images.jpg"));
 		player = new GameObject();
 		player.setTexture(ball);
+		//Sprite s = new Sprite(ball);
+		
 
 		
 	}
@@ -35,7 +37,7 @@ public class MyGdxGame implements ApplicationListener
 		Vector2 gravity = new Vector2(0,-1);
 		
 	
-		if(false && Gdx.input.isTouched()){
+		if(Gdx.input.isTouched()){
 			
 			touchPos.set(Gdx.input.getX(),Gdx.input.getY(),0);
 			
@@ -43,13 +45,16 @@ public class MyGdxGame implements ApplicationListener
 				touchPos.set(Gdx.graphics.getWidth() / 4, 
 					   Gdx.graphics.getWidth() / 2, Gdx.graphics.getWidth() / 2);
 			}
-	    Gdx.gl.glClearColor(1, 1, 1, 1);
+	    Gdx.gl.glClearColor(0, 1, 1, 1);
 	    Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		//batch.draw(texture, Gdx.graphics.getWidth() / 4, 0, 
 		//		   Gdx.graphics.getWidth() / 2, Gdx.graphics.getWidth() / 2);
 		//batch.draw(texture, /*Gdx.graphics.getWidth()-*/touchPos.x,Gdx.graphics.getHeight()-touchPos.y);
 		player.draw(batch);
+		
+		player.setX(touchPos.x-player.getTexture().getWidth()/2);
+		player.setY((Gdx.graphics.getHeight()-touchPos.y)-player.getTexture().getHeight()/2);
 		batch.end();
 	}
 
