@@ -41,18 +41,13 @@ public class Player extends GameObject implements InputProcessor {
 
     @Override
     public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-        if (allowJump && isDragged == false) {
-            allowJump = false;
-            jump(); 
-        }
+       
         return false;
     }
 
     @Override
     public boolean touchDragged(int screenX, int screenY, int pointer) {
-        if(isDragged==false) {
-        isDragged = true;
-        }
+       
         return false;
     }
 
