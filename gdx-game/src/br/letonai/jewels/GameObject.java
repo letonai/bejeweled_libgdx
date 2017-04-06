@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.*;
 import com.badlogic.gdx.math.*;
 import android.view.*;
 
-public abstract class GameObject {
+public class GameObject {
 	
 	protected int x,y;
 	protected float xSpeed,ySpeed;
