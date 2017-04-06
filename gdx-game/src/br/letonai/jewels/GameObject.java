@@ -15,8 +15,8 @@ public class GameObject {
 	
 
 	public  GameObject(Texture sp, int x, int y){
-		this.x=width;
-		this.y=height;
+		this.x=x;
+		this.y=y;
 		//this.sprite=sp
 		this.texture=sp;
 	}
@@ -41,24 +41,24 @@ public class GameObject {
 		return ySpeed;
 	}
 
-	public void setWidth(int width)
+	public void setX(int x)
 	{
-		this.width = width;
+		this.x = x;
 	}
 
-	public int getWidth()
+	public int getX()
 	{
-		return width;
+		return x;
 	}
 
-	public void setHeight(int height)
+	public void setY(int y)
 	{
-		this.height = height;
+		this.y = y;
 	}
 
-	public int getHeight()
+	public int getY()
 	{
-		return height;
+		return y;
 	}
 	
 	public void draw(SpriteBatch sb){
