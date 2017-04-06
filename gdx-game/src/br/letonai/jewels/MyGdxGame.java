@@ -11,6 +11,7 @@ public class MyGdxGame implements ApplicationListener
 	Texture texture;
 	Texture ball;
 	SpriteBatch batch;
+	Player player;
 
 	@Override
 	public void create()
@@ -18,6 +19,7 @@ public class MyGdxGame implements ApplicationListener
 		texture = new Texture(Gdx.files.internal("android.jpg"));
 		batch = new SpriteBatch();
 		ball = new Texture(Gdx.files.internal("android.jpg"));
+		player = new Player(ball,0,0);
 		
 	}
 
@@ -26,6 +28,7 @@ public class MyGdxGame implements ApplicationListener
 	{        
 		Vector3 touchPos = new Vector3();
 		Vector2 gravity = new Vector2(0,-1);
+		
 	
 		if(false && Gdx.input.isTouched()){
 			

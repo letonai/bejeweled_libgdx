@@ -9,7 +9,7 @@ import android.view.*;
 public class Player extends GameObject
 {
 	
-	public Player(){
-		super(0,0);
+	public Player(Texture txt,int x, int y){
+		super(x,y);
 	}
 }
