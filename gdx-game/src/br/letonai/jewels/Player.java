@@ -16,6 +16,7 @@ public class Player extends GameObject implements InputProcessor {
 	public Player(Texture txt,int x, int y){
 		super(x,y);
 		this.texture=txt;
+		
 	}
 	
 	@Override
