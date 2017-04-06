@@ -20,7 +20,7 @@ public class GameObject {
 		this.texture=sp;
 	}
 	
-	public setTexture(Texture txt){
+	public void setTexture(Texture txt){
 		this.texture=txt;
 	}
 

@@ -19,10 +19,11 @@ public class MyGdxGame implements ApplicationListener
 	@Override
 	public void create()
 	{
-		texture = new Texture(Gdx.files.internal("android.jpg"));
+		//texture = new Texture(Gdx.files.internal("android.jpg"));
 		batch = new SpriteBatch();
 		ball = new Texture(Gdx.files.internal("android.jpg"));
-		player = new GameObject(ball,0,0);
+		player = new GameObject();
+		player.setTexture(ball);
 
 		
 	}
