@@ -4,7 +4,7 @@ import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.*;
 import com.badlogic.gdx.graphics.g2d.*;
 import com.badlogic.gdx.math.*;
-import android.view.*;
+
 
 public class GameObject {
 	
@@ -62,7 +62,7 @@ public class GameObject {
 	}
 	
 	public void draw(SpriteBatch sb){
-		sb.draw(sb,x,y,0);
+		sb.draw(texture,x,y);
 	}
 
 	
