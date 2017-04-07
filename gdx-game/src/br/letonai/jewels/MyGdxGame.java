@@ -53,7 +53,7 @@ public class MyGdxGame implements ApplicationListener
 		player.setX(touchPos.x-player.getTexture().getWidth()/2);
 		//player.setX(MathUtils.sin(t*player.getY())-player.getTexture().getWidth()/2);
 		//player.setY((Gdx.graphics.getHeight()-touchPos.y)-player.getTexture().getHeight()/2);
-		player.setY((MathUtils.sin(t*player.getX()))-player.getTexture().getHeight()/2);
+		player.setY((player.getY()*MathUtils.sin(t*player.getX()))-player.getTexture().getHeight()/2);
 		batch.end();
 	}
 
