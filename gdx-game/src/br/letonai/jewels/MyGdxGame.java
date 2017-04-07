@@ -4,6 +4,7 @@ import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.*;
 import com.badlogic.gdx.graphics.g2d.*;
 import com.badlogic.gdx.math.*;
+import com.badlogic.gdx.utils.*;
 
 //import android.view.*;
 
@@ -35,7 +36,7 @@ public class MyGdxGame implements ApplicationListener
 	{        
 		Vector3 touchPos = new Vector3();
 		Vector2 gravity = new Vector2(0,-1);
-		
+		double t=TimeUtils.millis();
 	
 		if(Gdx.input.isTouched()){
 			
